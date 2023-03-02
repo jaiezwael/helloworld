@@ -17,11 +17,11 @@
                 <artifactId>jelastic-maven-plugin</artifactId>
                 <version>1.9</version>
                 <configuration>
-                    <apiToken>${TOKEN}</apiToken>
-                    <context>${CONTEXT}</context>
-                    <environment>${TARGET_ENV}</environment>
+                    <apiToken>35897cdd18994d4ea58489a67470e040746d7193</apiToken>
+                    <context>ROOT</context>
+                    <environment>myenv</environment>
                     <comment>test-plugin</comment>
-                    <api_hoster>${JELASTIC_API_ENDPOINT}</api_hoster>
+                    <api_hoster>app.p4d.click</api_hoster>
                 </configuration>
             </plugin>
             <plugin>
