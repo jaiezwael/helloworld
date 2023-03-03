@@ -10,7 +10,7 @@
     <name>myfirstproject</name>
     <url>http://maven.apache.org</url>
     <build>
-        <finalName>${project.artifactId}</finalName>
+        <finalName>myfirstmavenproject</finalName>
         <plugins>
             <plugin>
                 <groupId>com.jelastic</groupId>
