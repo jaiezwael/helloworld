@@ -32,9 +32,6 @@
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
             </plugin>
-		<properties>
-  			<sonar.qualitygate.wait>true</sonar.qualitygate.wait>
-		</properties>
         </plugins>
     </build>
 	
