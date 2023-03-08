@@ -1,3 +1,7 @@
-FROM payara/micro
+# Build the Docker image
+docker build -t waelj17/helloworld:2.0 .
 
-ADD ROOT.war /opt/payara/deployments/
+# Push the Docker image to Docker Hub
+docker login -u waelj17 -p LeoMessi1987
+docker push waelj17/helloworld:2.0
+
