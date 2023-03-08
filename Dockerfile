@@ -1,24 +1,17 @@
-# Use the official Java image as the base image
+# Use a Java runtime as a base image
 FROM openjdk:8-jdk-alpine
 
 # Set the working directory
 WORKDIR /app
 
-# Copy the project files into the container
-COPY . /app
+# Copy the source code to the container
+COPY . .
 
-# Build the project using Maven
-RUN ./mvnw clean package
+# Build the application into a .war file
+RUN ./mvnw package
 
-# Copy the generated .war file to the Jelastic deployment directory
-RUN cp target/*.war /opt/jelastic/repo/
-
-# Cleanup the working directory
-RUN rm -rf *
-
-# Expose the default Tomcat port
+# Expose port 8080
 EXPOSE 8080
 
-# Start Tomcat
-CMD ["/opt/tomcat/bin/catalina.sh", "run"]
-
+# Start the application
+CMD ["java", "-jar", "target/helloworld.war"]
