@@ -17,7 +17,7 @@
                 <artifactId>jelastic-maven-plugin</artifactId>
                 <version>1.9</version>
                 <configuration>
-                    <apiToken>35897cdd18994d4ea58489a67470e040746d7193</apiToken>
+                    <apiToken>e8309dce7da444a4a713a7a3c717e0817c3d79a1</apiToken>
                     <context>ROOT</context>
                     <environment>myenv</environment>
                     <comment>test-plugin</comment>
